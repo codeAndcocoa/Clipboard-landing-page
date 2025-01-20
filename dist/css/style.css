@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+/* Strong Cyan  */
+/* Light Blue  */
+/* Dark Grayish Blue */
+/* Grayish Blue */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+header,
+section,
+footer {
+  width: 100%;
+}
+
+header {
+  height: 77vh;
+  background-image: url(../../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero {
+  max-width: 90%;
+}
+.hero img {
+  margin-top: 7.5rem;
+  margin-bottom: 4.6875rem;
+}
+.hero h1 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.hero p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 3.4375rem;
+}
+
+.hero-buttons button {
+  width: 13.3125rem;
+}
+
+.ios-download-btn button {
+  background-color: hsl(171, 66%, 44%);
+  -webkit-box-shadow: 10px 10px 25px 3px hsla(171, 66%, 44%, 0.5);
+  box-shadow: 0px 10px 25px 0px hsla(171, 66%, 44%, 0.5);
+}
+.ios-download-btn button:hover {
+  background-color: hsla(171, 66%, 44%, 0.8);
+}
+
+.mac-download-btn button {
+  background-color: hsl(233, 100%, 69%);
+  -webkit-box-shadow: 10px 10px 25px 3px hsla(233, 100%, 69%, 0.5);
+  box-shadow: 0px 10px 25px 3px hsla(233, 100%, 69%, 0.5);
+}
+.mac-download-btn button:hover {
+  background-color: hsla(233, 100%, 69%, 0.8);
+}
+
+.snippets-intro {
+  max-width: 100%;
+  margin-top: 10.4375rem;
+}
+.snippets-intro h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.snippets-intro p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.snippets-flex {
+  margin-top: 5rem;
+}
+
+.snippets-features h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+.snippets-features p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.snippets-image img {
+  margin-left: -24%;
+}
+
+.access {
+  max-width: 90%;
+  margin: 9.5rem auto 0;
+}
+.access h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.access p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.access img {
+  margin-top: 7.25rem;
+}
+
+.work-flow {
+  max-width: 90%;
+  margin: 7.5rem auto 0;
+}
+.work-flow h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.875rem;
+}
+.work-flow p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 3.125rem;
+}
+
+.benefits {
+  margin: 0 auto 6.875rem;
+}
+.benefits h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 1.875rem;
+}
+.benefits p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.benefits img {
+  margin-bottom: 2.8125rem;
+}
+
+.partners {
+  margin: 0 auto 11.125rem;
+}
+
+.applications h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.9375rem;
+}
+.applications p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 2.75rem;
+}
+
+footer {
+  background-color: hsl(201, 11%, 96%);
+  margin-top: 8.4375rem;
+}
+footer .icons {
+  font-size: 1.125rem;
+  color: hsl(210, 10%, 33%);
+}
+footer .icons i:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.grid {
+  width: 80%;
+}
+.grid a {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.125rem;
+}
+.grid a:visited, .grid a:active, .grid a:focus {
+  color: hsl(210, 10%, 33%);
+}
+.grid a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media screen and (width <= 1024px) {
+  .snippets-intro {
+    max-width: 100%;
+    margin-top: 7.4375rem;
+  }
+  .snippets-image img {
+    margin-left: -11%;
+  }
+}
+@media screen and (width <= 992px) {
+  .snippets-image img {
+    margin-left: auto;
+  }
+  .grid {
+    margin: 3.5rem auto 3.125rem;
+  }
+}
+@media screen and (width <= 768px) {
+  header {
+    background-image: url(../../images/bg-header-mobile.png);
+  }
+  .hero-buttons button {
+    width: 23.5625rem;
+  }
+  .snippets-intro {
+    margin-top: 6.4375rem;
+  }
+  .snippets-image img {
+    margin-left: auto;
+  }
+  .grid {
+    margin: 1.5rem auto 2.125rem auto;
+  }
+}
+@media screen and (width <= 600px) {
+  header {
+    height: 95vh;
+  }
+  .hero-buttons button {
+    width: 19.5625rem;
+  }
+  .snippets-intro {
+    margin-top: 7.4375rem;
+  }
+  .grid {
+    margin: 2.5rem auto 3.125rem;
+  }
+}
+@media screen and (width >= 1920px) {
+  .snippets-image img {
+    margin-left: 0;
+  }
+}
+@media screen and (height <= 1366px) {
+  header {
+    height: 58.565vh;
+  }
+}
+@media screen and (height <= 1024px) {
+  header {
+    height: 78.125vh;
+  }
+}
+@media screen and (height <= 800px) {
+  header {
+    height: 100vh;
+  }
+}
+@media screen and (height <= 600px) {
+  header {
+    height: 133.333vh;
+  }
+}/*# sourceMappingURL=style.css.map */

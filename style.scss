@@ -1,0 +1,321 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+//Font Weights
+$weights: (
+  "Regular": 400,
+  "Semibold": 600,
+);
+
+//Font Size
+
+$fSize: 1.125rem;
+
+//Colors
+//?Primary
+$pr1: hsl(171, 66%, 44%); /* Strong Cyan  */
+$pr2: hsl(233, 100%, 69%); /* Light Blue  */
+
+//?Neutral
+$neu1: hsl(210, 10%, 33%); /* Dark Grayish Blue */
+$neu2: hsl(201, 11%, 66%); /* Grayish Blue */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+header,
+section,
+footer {
+  width: 100%;
+}
+
+//Header
+header {
+  height: 77vh;
+  background-image: url(../../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+// Hero container
+.hero {
+  max-width: 90%;
+  img {
+    margin-top: 7.5rem;
+    margin-bottom: 4.6875rem;
+  }
+  h1 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+    margin-bottom: 3.4375rem;
+  }
+}
+.hero-buttons button {
+  width: 13.3125rem;
+}
+.ios-download-btn button {
+  background-color: $pr1;
+  -webkit-box-shadow: 10px 10px 25px 3px hsl(171, 66%, 44%, 0.5);
+  -moz-box-shadow: 10px 10px 25px 3px hsl(171, 66%, 44%, 0.5);
+  box-shadow: 0px 10px 25px 0px hsl(171, 66%, 44%, 0.5);
+  &:hover {
+    background-color: hsl(171, 66%, 44%, 0.8);
+  }
+}
+.mac-download-btn button {
+  background-color: $pr2;
+  -webkit-box-shadow: 10px 10px 25px 3px hsl(233, 100%, 69%, 0.5);
+  -moz-box-shadow: 10px 10px 25px 3px hsl(233, 100%, 69%, 0.5);
+  box-shadow: 0px 10px 25px 3px hsl(233, 100%, 69%, 0.5);
+  &:hover {
+    background-color: hsl(233, 100%, 69%, 0.8);
+  }
+}
+
+//Snippets
+.snippets-intro {
+  max-width: 100%;
+  margin-top: 10.4375rem;
+  h2 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+  }
+}
+
+.snippets-flex {
+  margin-top: 5rem;
+}
+
+.snippets-features {
+  h3 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+  }
+}
+
+.snippets-image {
+  img {
+    margin-left: -24%;
+  }
+}
+
+//Access and Workflow
+.access {
+  max-width: 90%;
+  margin: 9.5rem auto 0;
+  h2 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+  }
+  img {
+    margin-top: 7.25rem;
+  }
+}
+.work-flow {
+  max-width: 90%;
+  margin: 7.5rem auto 0;
+  h2 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    font-size: 2rem;
+    margin-bottom: 1.875rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+    margin-bottom: 3.125rem;
+  }
+}
+
+.benefits {
+  margin: 0 auto 6.875rem;
+  h3 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    margin-bottom: 1.875rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+  }
+  img {
+    margin-bottom: 2.8125rem;
+  }
+}
+.partners {
+  margin: 0 auto 11.125rem;
+}
+.applications {
+  h2 {
+    color: $neu1;
+    font-weight: map-get($map: $weights, $key: "Semibold");
+    font-size: 2rem;
+    margin-bottom: 1.9375rem;
+  }
+  p {
+    color: $neu2;
+    font-weight: map-get($map: $weights, $key: "Regular");
+    font-size: $fSize;
+    line-height: 1.5;
+    margin-bottom: 2.75rem;
+  }
+}
+footer {
+  background-color: hsl(201, 11%, 96%);
+  margin-top: 8.4375rem;
+  .icons {
+    font-size: $fSize;
+    color: $neu1;
+    i:hover {
+      color: $pr1;
+      cursor: pointer;
+    }
+  }
+}
+
+  .grid {
+    
+    width: 80%;
+    a {
+      color: $neu1;
+      font-size: $fSize;
+      &:visited,
+      &:active,
+      &:focus {
+        color: $neu1;
+      }
+      &:hover {
+        color: $pr1;
+      }
+    }
+  }
+  
+
+//Media Queries
+@media screen  and (width <=1024px) {
+  .snippets-intro {
+    max-width: 100%;
+    margin-top: 7.4375rem;
+  }
+  .snippets-image {
+    img {
+      margin-left: -11%;
+    }
+  }
+}
+@media screen and (width <= 992px) {
+  .snippets-image {
+    img {
+      margin-left: auto;
+    }
+  }
+  .grid{
+    margin:3.5rem auto 3.1250rem ;
+  }
+}
+@media screen and (width <= 768px) {
+  header {
+    background-image: url(../../images/bg-header-mobile.png);
+  }
+  .hero-buttons button {
+    width: 23.5625rem;
+  }
+  .snippets-intro {
+    margin-top: 6.4375rem;
+  }
+  .snippets-image {
+    img {
+      margin-left: auto;
+    }
+  }
+  .grid{
+    margin:1.5rem auto 2.1250rem auto;
+  }
+}
+@media screen and (width<=600px) {
+  header {
+    height: 95vh;
+  }
+  .hero-buttons button {
+    width: 19.5625rem;
+  }
+  .snippets-intro {
+    margin-top: 7.4375rem;
+  }
+  .grid{
+    margin:2.5rem auto 3.1250rem;
+  }
+}
+@media screen and (width>=1920px) {
+  .snippets-image {
+    img {
+      margin-left: 0;
+    }
+  }
+}
+@media screen and (height <=1366px) {
+  header {
+    height: 58.565vh;
+  }
+}
+@media screen and (height <=1024px) {
+  header {
+    height: 78.125vh;
+  }
+}
+@media screen and (height <=800px) {
+  header {
+    height: 100vh;
+  }
+}
+@media screen and (height <= 600px) {
+  header {
+    height: 133.333vh;
+  }
+}
